@@ -1,0 +1,200 @@
+h1 {text-align: center;
+    color: red;
+    text-shadow: 4px 4px 5px red;
+}
+.title {color: orange;}
+#italic {color :orange;}
+.container {
+    border: 10px dashed aqua;
+    margin: 50px 5px 25px 0px;
+    padding:30px 5px 30px 5px;
+}
+
+nav {
+  background-color: aquamarine; 
+  text-align: center;
+}
+.nav-wrapper { background-color: blue;}
+a{ text-decoration-line: none;
+}
+nav ul {list-style:none;}
+nav li {
+    display: inline-block;
+    padding: 30px;
+}
+.box { height: 200px;
+     width:200px;
+    background:blue ;
+    margin:10px ;
+}
+
+@keyframes fademe{
+   0%{ 
+       opacity :1;
+    } 
+   100%{ 
+       opacity :0;
+    }
+}
+
+.contact-box{
+    display:flex;
+    justify-content: center;
+}
+.row{
+    margin:30px;
+
+}
+.input-field {
+    margin:20px;
+}
+
+@keyframes rotation {
+    0% { transform: rotate(90deg);}
+    50% {transform: rotate(180deg);}
+    100% {transform: rotate(360deg);}
+}
+
+#box2{
+    animation-name:rotation ;
+    animation-duration: 5s;
+    animation-iteration-count:infinite;
+    animation-timing-function: ease-in-out;
+    border-radius: 10%;
+    background-image:radial-gradient(circle,purple,orange,yellow,pink,purple);
+}
+#box1{
+    animation-name:fademe ;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.circle-Img{
+    border-radius: 50%;
+}
+
+@keyframes getBigger{
+    0% {transform:scale(1);}
+    50% {transform:scale(2);}
+    100% {transform:scale(0.5);}
+}
+#box3{
+    animation:getBigger infinite  8s ease-in;
+    border-radius: 50%;
+    background: orange;
+}
+
+@keyframes changeColors{
+    0% {background-color :gray;}
+    25% {background-color :purple;}
+    50% {background-color :pink;}
+    75% {background-color :green;}
+    100% {background-color :gray;}
+}
+#box4 {
+    animation:changeColors 7s 2s forwards;
+}
+
+@keyframes moveBox{
+    0%{ Left: 0px ; top: 0px;}
+    25%{ Left: 100px ; top: 0px;}
+    50%{ Left: 100px ; top: 200px;}
+    75%{ Left: 0px ; top: 200px;}
+    100%{ Left: 0px ; top: 0px;}
+}
+#box5{
+    position:relative;
+    animation:moveBox 5s 3s;
+    background:red;   
+}
+#box6{
+    top:10px;
+    left:20px;
+    position: relative;
+}
+/*
+html{
+    /*background-image:url(kiten1.jfif) ;
+background-repeat: no-repeat;
+background-size: cover;
+background-image:radial-gradient(blue,green,purple);
+}*/
+
+img{
+    box-shadow:5px 5px 10px 10px rgb(126, 128, 133) ;
+}
+.flex {
+    border: 3px solid black;
+    display :flex;
+    flex-wrap:wrap;
+    justify-content:space-between ;
+      
+}
+
+form input ,textarea,button{
+    display:block;
+    margin:30px;
+}
+
+.wrapper {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(5, [col] 20% ) ;
+    grid-template-rows: repeat(3, [row] auto  );
+    background-color: #fff;
+    color: #444;
+}
+
+.Box {
+    background-color:#fff;
+    color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 150%;
+    z-index:10;
+
+}
+
+.a {
+    grid-column: col / span  2;
+    grid-row: row ;
+    display:flex;
+    justify-content: center;
+}
+.b {
+    grid-column: col 4 / span  3 ;
+    grid-row: row ;
+    display:flex;
+    justify-content: center;
+}
+.c {
+    grid-column: col / span 5;
+    grid-row: row 2 ;
+    display:flex;
+    justify-content: center;
+    background-image: linear-gradient(pink,yellow,purple,orange);
+}
+.d {
+    grid-column: col  / span  3 ;
+    grid-row: row 3 ;
+    display:flex;
+    justify-content: center;
+}
+
+.e {
+    grid-column: col 3 / span  3;
+    grid-row: row 3;
+    display:flex;
+    justify-content: center;
+}
+
+.f {
+    grid-column: col 2 / span 3;
+    grid-row: row 2  ;
+    background-color: rgba(49,121,207, 0.5);
+    z-index: 20;
+    display:flex;
+    justify-content: center;
+    background-image: linear-gradient(orange,purple,yellow,pink);
+}
